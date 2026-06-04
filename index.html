@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Sadee Shadman | Software Developer & Engineer</title>
+  <meta name="description" content="Sadee Shadman — Software Developer specializing in web development, software engineering, and building modern digital experiences. View my projects and get in touch." />
+  <meta name="keywords" content="Sadee Shadman, software developer, web developer, software engineer, portfolio, JavaScript, Python, React, full stack" />
+  <meta name="author" content="Sadee Shadman" />
+
+  <!-- Open Graph (LinkedIn, Facebook previews) -->
+  <meta property="og:title" content="Sadee Shadman | Software Developer" />
+  <meta property="og:description" content="Portfolio of Sadee Shadman — software engineer building modern web experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sadeeshadman.github.io" />
+  <meta property="og:image" content="assets/og-preview.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sadee Shadman | Software Developer" />
+  <meta name="twitter:description" content="Portfolio of Sadee Shadman — software engineer building modern web experiences." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">SS<span class="accent">.</span></a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+        <a href="#about"      class="nav-link" id="nav-about">About</a>
+        <a href="#skills"     class="nav-link" id="nav-skills">Skills</a>
+        <a href="#projects"   class="nav-link" id="nav-projects">Projects</a>
+        <a href="#experience" class="nav-link" id="nav-experience">Experience</a>
+        <a href="#education"  class="nav-link" id="nav-education">Education</a>
+        <a href="#contact"    class="nav-link" id="nav-contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          FR
+        </button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="assets/resume.pdf" class="btn btn-outline btn-sm" download aria-label="Download Resume">
+          <i class="fas fa-download"></i> <span id="nav-resume">Resume</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════ HERO ════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-greeting reveal" id="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name reveal">Sadee Shadman<span class="accent">.</span></h1>
+      <h2 class="hero-title reveal">
+        <span class="typed-wrapper">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </span>
+      </h2>
+      <p class="hero-description reveal" id="hero-description">
+        I build clean, performant, and accessible digital experiences.
+        Passionate about turning complex problems into elegant solutions.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary" id="hero-cta-work">View My Work</a>
+        <a href="#contact"  class="btn btn-outline" id="hero-cta-contact">Get In Touch</a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://www.linkedin.com/in/sadee-shadman-6a9412256" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/sadeeshadman"      target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:shadmansadee@gmail.com"        aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════ ABOUT ════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal" id="about-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image-frame">
+            <img src="assets/profile.png" alt="Sadee Shadman" class="about-image" />
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p id="about-p1">
+            Hello! I'm <strong>Sadee Shadman</strong>, a software developer based in Montreal.
+            I love building things for the web — from slick front-end interfaces to robust back-end systems.
+          </p>
+          <p id="about-p2">
+            I'm currently a New Graduate from <strong>Concordia University</strong>,
+            where I completed Bachelor of Engineering in Software Engineering. When I'm not coding, you'll find me
+            working on my car, learning French, or exploring the latest in tech.
+          </p>
+          <p id="about-p3">
+            I'm actively looking for opportunities where I can contribute, grow, and continue
+            learning alongside talented teams. I am willing to relocate and open to remote work.
+          </p>
+          <div class="about-facts">
+            <div class="fact"><i class="fas fa-map-marker-alt accent"></i> Montreal, QC</div>
+            <div class="fact" id="about-fact-edu"><i class="fas fa-graduation-cap accent"></i> BEng in Software Engineering, Concordia University</div>
+            <div class="fact" id="about-fact-open"><i class="fas fa-briefcase accent"></i> Open to opportunities</div>
+          </div>
+          <a href="assets/resume.pdf" class="btn btn-primary" download>
+            <i class="fas fa-file-pdf"></i> <span id="about-resume">Download Resume</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal" id="skills-title">Technical <span class="accent">Skills</span></h2>
+      <p class="section-subtitle reveal" id="skills-subtitle">Technologies I've been working with recently</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li><i class="fab fa-js"></i> TypeScript</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-database"></i> SQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>Frontend</h3>
+          <ul class="skill-list">
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fas fa-forward"></i> Next.js</li>
+            <li><i class="fab fa-css3-alt"></i> Tailwind CSS</li>
+            <li><i class="fab fa-react"></i> React Native</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-server"></i></div>
+          <h3>Backend & Data</h3>
+          <ul class="skill-list">
+            <li><i class="fab fa-node-js"></i> Node.js</li>
+            <li><i class="fas fa-network-wired"></i> Express.js</li>
+            <li><i class="fas fa-bolt"></i> FastAPI</li>
+            <li><i class="fas fa-leaf"></i> MongoDB</li>
+            <li><i class="fas fa-database"></i> PostgreSQL</li>
+            <li><i class="fas fa-fire"></i> REST APIs</li>
+            <li><i class="fas fa-key"></i> OAuth 2.0</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools & DevOps</h3>
+          <ul class="skill-list">
+            <li><i class="fab fa-git-alt"></i> Git</li>
+            <li><i class="fab fa-docker"></i> Docker</li>
+            <li><i class="fab fa-github"></i> GitHub Actions</li>
+            <li><i class="fab fa-linux"></i> Linux / WSL</li>
+            <li><i class="fas fa-vial"></i> Jest</li>
+            <li><i class="fas fa-check-double"></i> ESLint</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROJECTS ═════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal" id="projects-title">Featured <span class="accent">Projects</span></h2>
+      <p class="section-subtitle reveal" id="projects-subtitle">Things I've worked on that I'm proud of</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <i class="fas fa-folder-open project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/iKozay/TrackMyDegree" target="_blank" rel="noopener noreferrer" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
+              <a href="https://trackmydegree.ca/" target="_blank" rel="noopener noreferrer" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">TrackMyDegree Capstone Project</h3>
+          <p class="project-description">
+            In a team setting, I was responsible for full-stack development of the secure admin dashboard, building the automated co-op sequence generator from program-specific JSON templates, and implementing one-click PDF Acroform autofill to reduce student errors and save time.
+          </p>
+          <ul class="project-tags">
+            <li>React</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>Redis</li><li>Docker</li><li>Jest</li>
+          </ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <i class="fas fa-folder-open project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Golden-Doodle/CU-MapNav" target="_blank" rel="noopener noreferrer" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">CUMapNav</h3>
+          <p class="project-description">
+            As part of the project team, I was responsible for design diagrams, UI/UX design decisions, identifying and applying design patterns, and leading usability testing, documentation, and final app presentation.
+          </p>
+          <ul class="project-tags">
+            <li>UI/UX Design</li><li>Figma</li><li>Usability Testing</li><li>Design Patterns</li>
+          </ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <i class="fas fa-folder-open project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/codedsami/COMP-371-Computer-Graphics" target="_blank" rel="noopener noreferrer" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Flight Combat Simulator</h3>
+          <p class="project-description">
+            Within a collaborative team project, I was responsible for implementing the projectile-based combat system and contributing to a C++17/OpenGL simulator with a 3D city scene, physics-driven aircraft controls, and real-time lighting and shadow mapping.
+          </p>
+          <ul class="project-tags">
+            <li>C++17</li><li>OpenGL</li><li>GLFW</li><li>GLM</li><li>Assimp</li><li>CMake</li>
+          </ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <i class="fas fa-folder-open project-icon"></i>
+            <div class="project-links">
+              <a href="https://medium.com/@sadeeshadman/case-study-ui-ux-design-of-a-health-companion-super-app-4529e50cb3ae" target="_blank" rel="noopener noreferrer" aria-label="Case Study on Medium"><i class="fab fa-medium"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Wellora</h3>
+          <p class="project-description">
+            Solo project: I authored and published a Medium case study on a health companion app UI/UX process, covering user survey insights, requirements analysis, persona design, user journey mapping, wireframing, prototype design in Figma, and a usability testing plan.
+          </p>
+          <ul class="project-tags">
+            <li>UI/UX Design</li><li>Figma</li><li>User Research</li><li>Case Study</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <div class="projects-cta reveal">
+        <a href="https://github.com/sadeeshadman" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <i class="fab fa-github"></i> <span id="projects-cta">View All on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ EXPERIENCE ═══════════════════════════ -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal" id="experience-title">Work <span class="accent">Experience</span></h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-company">Constein Group, Ottawa, ON</span>
+              <span class="timeline-period">Sep 2025 — Apr 2026</span>
+            </div>
+            <h3 class="timeline-role">Web Developer</h3>
+            <ul class="timeline-details">
+              <li>Developed a production website for Constein Group, a property management and home inspection startup based in Ottawa.</li>
+              <li>Delivered an agile product showcasing services, authentication, automated client communication, and an automated Ontario home inspection reporting workflow.</li>
+              <li>Implemented quality and CI practices with Prettier, ESLint, TypeScript checks, Jest coverage, GitHub Actions, and end-to-end automation support with Puppeteer.</li>
+            </ul>
+            <ul class="project-tags">
+              <li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>GitHub Actions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-company">Self-Employed, Dhaka, Bangladesh</span>
+              <span class="timeline-period">Feb 2021 — Jun 2022</span>
+            </div>
+            <h3 class="timeline-role">Tutor</h3>
+            <ul class="timeline-details">
+              <li>Tutored O and A Level students in Mathematics, Physics, and Chemistry.</li>
+              <li>Prepared students under British Cambridge and Pearson Edexcel curriculums with structured lesson plans and exam-focused coaching.</li>
+            </ul>
+            <ul class="project-tags">
+              <li>Teaching</li><li>Curriculum Planning</li><li>Communication</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ EDUCATION ════════════════════════════ -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title reveal" id="education-title">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-company">Concordia University, Montreal, QC</span>
+              <span class="timeline-period">Apr 2026</span>
+            </div>
+            <h3 class="timeline-role">BEng in Software Engineering</h3>
+            <ul class="timeline-details">
+              <li><strong>Core Courses:</strong> Object Oriented Programming I and II, Software Processes and Practices, Software Requirements and Deployment, Software Architecture and Design, Information Systems Security, Software Testing Verification and Quality Assurance, Data Systems, Operating Systems, Data Structures and Algorithms, Management Measurement and Quality Control.</li>
+              <li><strong>Electives:</strong> Computer Graphics, Advanced Programming with C++, Introduction to Game Development.</li>
+              <li><strong>Volunteering:</strong> ConUHacks X - the largest hackathon in Quebec, welcoming over 1000 participants and 30 sponsors.</li>
+            </ul>
+            <ul class="project-tags">
+              <li>Software Engineering</li><li>Algorithms</li><li>Operating Systems</li><li>Software Testing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ══════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title reveal" id="contact-title">Get In <span class="accent">Touch</span></h2>
+      <p class="section-subtitle reveal" id="contact-subtitle">
+        I'm currently open to new opportunities. Whether you have a question, a project idea,
+        or just want to say hi — my inbox is always open!
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-cards reveal">
+          <a href="mailto:shadmansadee@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <span>shadmansadee@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/sadee-shadman-6a9412256" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>linkedin.com/in/sadee-shadman-6a9412256</span>
+            </div>
+          </a>
+          <a href="https://github.com/sadeeshadman" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <i class="fab fa-github"></i>
+            <div>
+              <strong>GitHub</strong>
+              <span>github.com/sadeeshadman</span>
+            </div>
+          </a>
+          <a href="assets/resume.pdf" class="contact-card" download>
+            <i class="fas fa-file-pdf"></i>
+            <div>
+              <strong>Resume</strong>
+              <span id="contact-resume">Download PDF</span>
+            </div>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xqeoknyy" method="POST" novalidate>
+          <div class="form-group">
+            <label for="name" id="label-name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email" id="label-email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="subject" id="label-subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="message" id="label-message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <i class="fas fa-paper-plane"></i> <span id="submit-text">Send Message</span>
+          </button>
+          <p class="form-note" id="form-note">
+            Alternatively, email me directly at
+            <a href="mailto:shadmansadee@gmail.com">shadmansadee@gmail.com</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p id="footer-credit">Designed &amp; Built by <strong>Sadee Shadman</strong></p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/sadeeshadman" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/sadeeshadman"      target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:shadmansadee@gmail.com"        aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-year" id="footer-rights">© <span id="year"></span> Sadee Shadman. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
